@@ -20,7 +20,12 @@ function splitSentence(frase) {
   return retornoArray;
 }
 // Desafio 3 - Crie a função concatName
-
+function concatName(array) {
+  let fraseFinal = array[array.length - 1];
+  fraseFinal += ', ';
+  fraseFinal += array[0];
+  return fraseFinal;
+}
 // Desafio 4 - Crie a função footballPoints
 
 // Desafio 5 - Crie a função highestCount
