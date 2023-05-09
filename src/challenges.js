@@ -11,7 +11,14 @@ function compareTrue(parametro1, parametro2) {
   return result;
 }
 // Desafio 2 - Crie a função splitSentence
-
+function splitSentence(frase) {
+  let retornoArray = [];
+  let fraseSplitada = frase.split(' ');
+  for (let palavra of fraseSplitada) {
+    retornoArray.push(palavra);
+  }
+  return retornoArray;
+}
 // Desafio 3 - Crie a função concatName
 
 // Desafio 4 - Crie a função footballPoints
