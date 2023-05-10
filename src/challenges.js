@@ -46,9 +46,28 @@ function highestCount(arrayNumeros) {
   }
   return quantidadeMaiorValor;
 }
-console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
+function calcTriangleArea(base, height) {
+  let areaTotal = (base * height) / 2;
+  return areaTotal;
+}
 
+function calcRectangleArea(base, height) {
+  let areaTotal = (base * height);
+  return areaTotal;
+}
+
+function calcAllAreas(base, height, form) {
+  let result;
+  if (form === 'triângulo') {
+    result = `O valor da área do triângulo é de: ${calcTriangleArea(base, height)}`;
+  } else if (form === 'retângulo') {
+    result = `O valor da área do retângulo é de: ${calcRectangleArea(base, height)}`;
+  } else {
+    result = 'Não foi possível fazer o cálculo, insira uma forma geométrica válida';
+  }
+  return result;
+}
 // Desafio 7 - Crie a função catAndMouse
 
 // Desafio 8 - Crie a função fizzBuzz
