@@ -71,7 +71,7 @@ function calcAllAreas(base, height, form) {
 // Desafio 7 - Crie a função catAndMouse
 function catAndMouse(mouse, cat1, cat2) {
   let qualGatoMaisPerto = '';
-  if ((cat1 + mouse) && (cat2 - mouse) === mouse) {
+  if ((cat1 - mouse) && (cat2 - mouse) === mouse) {
     qualGatoMaisPerto = 'os gatos trombam e o rato foge';
   } else if ((cat1 - mouse) < (cat2 - mouse)) {
     qualGatoMaisPerto = 'cat1';
@@ -82,7 +82,12 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 console.log(catAndMouse(1, 0, 2));
 // Desafio 8 - Crie a função fizzBuzz
+function fizzBuzz(arrayNumeros) {
+  let arrayRetorno = [];
+  for (let index = 0; index < arrayNumeros.length; index += 1) {
 
+  }
+}
 // Desafio 9 - Crie a função encode e a função decode
 
 // Desafio 10 - Crie a função techList
