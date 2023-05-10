@@ -80,14 +80,23 @@ function catAndMouse(mouse, cat1, cat2) {
   }
   return qualGatoMaisPerto;
 }
-console.log(catAndMouse(1, 0, 2));
 // Desafio 8 - Crie a função fizzBuzz
 function fizzBuzz(arrayNumeros) {
   let arrayRetorno = [];
   for (let index = 0; index < arrayNumeros.length; index += 1) {
-
+    if (arrayNumeros[index] % 5 === 0 && arrayNumeros[index] % 3 === 0) {
+      arrayRetorno.push('fizzBuzz');
+    } else if (arrayNumeros[index] % 3 === 0) {
+      arrayRetorno.push('fizz');
+    } else if (arrayNumeros[index] % 5 === 0) {
+      arrayRetorno.push('buzz');
+    } else {
+      arrayRetorno.push('bug!');
+    }
   }
+  return arrayRetorno;
 }
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
 // Desafio 9 - Crie a função encode e a função decode
 
 // Desafio 10 - Crie a função techList
