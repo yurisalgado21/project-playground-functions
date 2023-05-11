@@ -96,9 +96,43 @@ function fizzBuzz(arrayNumeros) {
   }
   return arrayRetorno;
 }
-console.log(fizzBuzz([2, 15, 7, 9, 45]));
 // Desafio 9 - Crie a função encode e a função decode
+function encode(frase) {
+  let fraseSplit = frase.split('');
+  for (let index = 0; index < fraseSplit.length; index += 1) {
+    if (fraseSplit[index] === 'a') {
+      fraseSplit[index] = '1';
+    } else if (fraseSplit[index] === 'e') {
+      fraseSplit[index] = '2';
+    } else if (fraseSplit[index] === 'i') {
+      fraseSplit[index] = '3';
+    } else if (fraseSplit[index] === 'o') {
+      fraseSplit[index] = '4';
+    } else if (fraseSplit[index] === 'u') {
+      fraseSplit[index] = '5';
+    }
+  }
+  return fraseSplit.join('');
+}
 
+function decode(fraseNumerica) {
+  fraseNumerica = fraseNumerica.split('');
+  for (let index = 0; index < fraseNumerica.length; index += 1) {
+    if (fraseNumerica[index] === '1') {
+      fraseNumerica[index] = 'a';
+    } else if (fraseNumerica[index] === '2') {
+      fraseNumerica[index] = 'e';
+    } else if (fraseNumerica[index] === '3') {
+      fraseNumerica[index] = 'i';
+    } else if (fraseNumerica[index] === '4') {
+      fraseNumerica[index] = 'o';
+    } else if (fraseNumerica[index] === '5') {
+      fraseNumerica[index] = 'u';
+    }
+  }
+  return fraseNumerica.join('');
+}
+console.log(decode('h3 th2r2!'));
 // Desafio 10 - Crie a função techList
 
 // Não modifique essas linhas
