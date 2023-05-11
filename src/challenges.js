@@ -132,9 +132,21 @@ function decode(fraseNumerica) {
   }
   return fraseNumerica.join('');
 }
-console.log(decode('h3 th2r2!'));
 // Desafio 10 - Crie a função techList
-
+function techList(newArray, palavraString) {
+  let retorno = [];
+  let objRetorno = {};
+  newArray.sort();
+  for (let index = 0; index < newArray.length; index += 1) {
+    objRetorno = { tech: newArray[0],
+      name: palavraString };
+    objRetorno.tech = newArray[index];
+    objRetorno.name = palavraString;
+    retorno.push(objRetorno);
+  }
+  return retorno.sort();
+}
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 // Não modifique essas linhas
 module.exports = {
   calcTriangleArea: typeof calcTriangleArea === 'function' ? calcTriangleArea : (() => {}),
